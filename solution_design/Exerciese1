@@ -1,0 +1,8 @@
+create dicts:
+User, Acquaintance
+Procedures:
+1. Add friend, Add friends,-- Update dictionaries with user input, return true on success.
+2. Remove user: not removed from acquaintances. -- true on success. false on invalid id.
+3.get_friends(user_id) return friends of a user. can be done by retriving from aquaintance dict.
+Do this and try to get more clarity on messages part.
+4. Message is a tuple with the specified fields.
