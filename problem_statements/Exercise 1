@@ -1,0 +1,114 @@
+Exercise 1
+-------------
+Information about registered users is recorded in a (global) 
+master dictionary:
+Users = {
+    user_id_1: (name, place, date_of_birth),
+            ...
+    user_id_n: (name, place, date_of_birth),
+}
+
+A registered user's acquaintances (aka friends) is stored in another 
+global dictionary:
+Acquaintances = {
+    user_id_1: [ acquaintance_id_1, ..., acquaintance_id_j ]) where j >= 0
+    ...
+    user_id_n: [ acquaintance_id_1, ..., acquaintance_id_k ]) where k >= 0
+}
+where each acquaintance_id refers to a valid (registered) user.
+
+
+The messages received by a user are grouped as follows:
+Messages = {
+    user_id_1: [msg_1, ..., msg_j]) where j >= 0
+    ...
+    user_id_n: [msg_1, ..., msg_k) where k >= 0
+}
+
+
+Each message has four components:
+(sender_id, message_id, text, date_received, time_received)
+
+Implement the following procedures:
+    add_friend(user_id, friend_id)
+    add_friends(user_id, (friend_id_1, ..., friend_id_n)) where n >= 1.
+      -- update Acquaintances dictionary with 'friend_id' for a specific
+         user.
+      -- both procedures return True on success, and False on failure.
+
+    remove_user(user_id)
+      -- updates the 'Users' dictionary. The 'Acquaintances' is not
+         immediately updated to reflect the potential side-effects.
+      -- returns True on success.
+      -- returns False if user_id is invalid (there's no user with that id).
+
+    get_friends(user_id)
+      -- on success, returns a tuple of friends of a particular user.
+      -- returns None otherwise.
+
+    get_friends_of_friends(user_id)
+      -- on success, returns a tuple containing user ids who are 
+         friends of friends.
+      -- returns None otherwise
+      Special note: friends-of-friends may not include immediate friends!
+         that is, exclude friends from the friends-of-friends 
+
+      
+    send_message(sender_id, receiver_id, msg_text)
+    send_group_message(sender_id, (receiver_id_1, ..., receiver_id_n), msg)
+      -- return False if either 'sender_id' or 'receiver_id' is invalid.
+      -- return True if the message is properly added to the 
+         receiver's message list in 'Messages' dictionary.
+    
+    get_messages_from_friend(receiver_id, friend_id)
+      -- returns a tuple of messages on success. Thsi tuple may be empty
+         if there are no messages from the specified friend.
+      -- returns None if 'receiver_id' or 'friend_id' is invalid.
+
+    get_messages_from_all_friends(receiver_id)
+      -- returns a tuple of messages, which may be empty (if there are no 
+         messages for a person with id 'receiver_id'). 
+      
+    get_birth_day_messages(receiver_id)
+
+    delete_message(user_id, msg_id)
+      -- return True on success.
+      -- returns False if 'user_id' or 'msg_id' is invalid.
+
+    delete_messages(user_id, (msg_id_1, ..., msg_id_n)) where n >= 0
+      -- return the number of messages that were actually deleted.
+      -- May return any number between zero and 'n'.
+    delete_all_messages(user_id)
+    delete_messaged_from_friend(receiver_id, friend_id)
+
+
+    
+Exercise 2
+--------------
+A 3D Cartesian coordinate is represented as a tuple:
+(x, y, z)
+
+A vector is represented by a tuple of two points:
+(p1, p2) where p1 is a tuple (x1, y1, z1) and p2 is also a tuple (x2, y2, z2)
+
+Implement the following procedures:
+    length(vector)
+    normalize(vector)
+      -- returns a vector (p1, p2) where p1 is (0, 0, 0)
+    dot_product(vector, vector)
+    cross_product(vector, vector) : 
+      -- returns a vector (p1, p2) where p1 is (0, 0, 0)
+    
+
+
+Exercise 3
+--------------
+Complete the Phonenum and Contacts data types that were discussed in the 
+lecture sessions on Jan-4, Saturday. The following enhancements are mandatory:
+  (A) the ten digit phone number should consist of only digits.
+  (B) phone number should allow an optional country code.
+  (C) a new procedure:
+      update_contact_number(contacts, contact_name, old_number, new_number)
+        -- updates the old number with the new one. old number will be
+           no longer accessible after a successful update.
+        -- returns True on success and False on failure.
