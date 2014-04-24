@@ -1,6 +1,11 @@
 create dicts:
 User, Acquaintance
+-- read command line arguments into a list(for user). then enter the user details into the dict() declared.
+-- They are dictionary of tuples(name,place,dob). dictionary size unlimited.
+-- both aare global.
+-- optional : add validations to the list taken as input.(command line arguments should be 3)
 
+--add exception handling. 
 Message is a tuple with the specified fields.
 
 Procedures:
