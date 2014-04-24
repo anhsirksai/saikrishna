@@ -28,12 +28,13 @@ Acquaintances = dict()
 def add_friends(user_id,friend_id):
 
 #add a function to get userif from username:
->>> for k, v in Users.iteritems():
-...     if(Users[k][0][0]=='krishna'):
-...         print k,v
+for k, v in Users.iteritems():
+    if(Users[k][0][0]=='krishna'):
+        print k,v
 
 #>>> Users
 #{1: [['sai', 'rjy', '17061989']], 2: [['krishna', 'rjy', '17061989']]}
+
 #add a function to read userid and friendid from user.
     list = []
     listparam = raw_input('enter userid : ')
