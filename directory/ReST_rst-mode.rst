@@ -2,7 +2,7 @@
 :Topic: test rst-mode in emacs
 :`hyperlink`_:
 
-.. _`hyperlink`:https://facebook.com
+.. _`hyperlink`: https://facebook.com
 
 .. contents:: **Table of contents**
 
@@ -23,5 +23,9 @@ Notes
 
 * How to add a hyperlink_ in another way:
 
-.. _`hyperlink`: www.google.com
+.. _`hyperlink`: http://www.google.com
+
+`Add a new storage backend to the OpenStack Message Queuing Service`_
+
+.. _`Add a new storage backend to the OpenStack Message Queuing Service`: https://wiki.openstack.org/wiki/GSoC2014/Queues/Storage
 
