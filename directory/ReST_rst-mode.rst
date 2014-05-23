@@ -1,11 +1,10 @@
 :name: saikrishna
 :Topic: test rst-mode in emacs
-:`hyperlink`_
+:`hyperlink`_:
 
 .. _`hyperlink`:https://facebook.com
 
 .. contents:: **Table of contents**
-
 
 About me
 ========
@@ -24,5 +23,5 @@ Notes
 
 * How to add a hyperlink_ in another way:
 
-.. _hyperlink: www.google.com
+.. _`hyperlink`: www.google.com
 
