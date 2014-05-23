@@ -1,0 +1,150 @@
+#+title: An example document
+#+author: sai krishna
+#+TITLE:     tutorial.txt
+#+AUTHOR:    saikrishna
+#+EMAIL:     saikrishna@ubuntu
+#+DATE:      2014-05-21 Wed
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+
+* Agenda
+
+  **  Introduction
+
+  **  Emacs-Intro
+
+  **  Org-mode
+
+  **  Literate Programming
+   marking a url: [[http://www.iiit.ac.in]]
+   one can hyperlink to any document on your local file system as below:
+   here is the [[~/saikrishna/git/vlead_internship/emacstext.txt][bashrc]] to . link to the file on the local directory.
+
+ * Tables
+ | country | capital   |
+ |---------+-----------+
+ | India   | New Delhi |
+ |         |           |
+ 
+ * Maths
+  [x^{2}+y^{2}= Z^{2}]
+
+ * Things to learn
+
+  - GIT :: git is a version control system
+  - EMACS :: Emacs is a text editor
+     + Text editing commands
+    + File browsing commnds
+    + Org mode
+  - PYTHON :: python is a programming language
+ * Date Manipulation
+   [2014-05-21 Wed]
+
+ * Org-Babel: Literate Programming using Org mode.
+   
+   * =Hello World!= in python
+
+     First we import the =time= library from python
+
+    #+begin_src python  :tangle a.py
+    import time
+    #+end_src
+ 
+     Then we invole =time.strftime= function with a format that we wish.
+
+     #+begin_src python  :tangle a.py
+     print "Hello world"
+     print "This was evaluated at " + time.strftime("%Y-%m-%d-%H:%M:%S")
+     #+end_src
+
+
+
+
+python's REST(restructure text)
+emacs:
+programmable editor : (dark)
+Navigation
+pane
+grey buffer: *scratch*
+M-x version
+
+C-x C-b --> browse thru buffers
+C-g = quit = as in esc
+C-x C-f = open a new file.
+
+convension: 2 spaces in the middle. and navigate using M-a M-e
+
+opening a directory: C-x C-f directoryname
+
+M-x shel
+
+M-x Apropos -- Not working
+
+Control the panes in the home screensC-x 0 1 2
+
+Navigate between buffers: C-x o
+
+In directory
+C-v will open the complete buffers.
+M-x end-of-buffer
+
+create a directory:
+in the directory: +
+delete a directory: d x
+unmark a directory : u
+g - reload.
+
+Move :
+put the cursor on file name. press R - Give the file name in the new directory.
+
+C-h ?
+
+C-x C-s = will save the file.
+
+Org mode:
+M-x org-mode
+M-x text-mode
+TAB for zoomin zoomout
+*word* = bold.
+/asda/ = italics
+
+create hyperlink in a document:
+URL: [[http://www.iiit.ac.in]] C-c C-o = will open the webpage. // description is added.
+C-c C-l : edit the page. url will be added.
+hyperlinkk to the document in the machene:[[link][desc]]
+
+*tables:
+ | dsa | sad |
+ |-<tab>   // fils in the complete table.
+
+ export to html pdf,: 
+C-c C-e
+MARKUP's:
+--------
+| table
+- list
++ sublist
+
+install latex.
+
+Date:
+M-x calander
+C-c ! = insert the date. select the date on the calander that appeared.
+shift+UP or shift+down - will chanfe the date and day of the date we inserted.
+
+#+BEGIN_SRC  python   : tangle a.py --> this come when: <s TAB
+
+#+end_src
+
+
+M-x org-Babel-tangle-file : This will tangle a program file.
+
+Inserting java script:  

@@ -1,0 +1,160 @@
+[srudra@esling111 ~]$ cat /home/xxxxxxxx/.emacs
+(defun my-c-mode-common-hook ()
+  (turn-on-font-lock)
+  (c-set-offset 'substatement-open 0)
+  (c-set-offset 'case-label '+)
+  (setq default-tab-width 4)
+  ;;(c-set-offset 'arglist-cont-nonempty c-lineup-arglist)
+)
+
+(defun my-python-mode-common-hook ()
+  (turn-on-font-lock)
+  ;;
+)
+
+(transient-mark-mode 1)
+
+(add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
+(add-hook 'python-mode-hook 'my-python-mode-common-hook)
+
+;; Reminder: use C-q <TAB> for 'true tab'
+
+(setq c-tab-always-indent nil)
+(setq c-indent-level 4)
+(setq-default indent-tabs-mode nil)
+(setq-default c-basic-offset 4)
+(setq c-default-style "k&r")
+
+(setq message-default-charset 'iso-8859-1)
+(setq default-major-mode 'text-mode)
+(line-number-mode 1)
+(column-number-mode 1)
+
+(add-to-list 'load-path "~/src/emacs/")
+
+;; goto line function C-c C-g
+(global-set-key [ (control c) (control g) ] 'goto-line)
+
+;; format the title-bar to always include the buffer name
+(setq frame-title-format "emacs - %b")
+
+;; kill trailing white space on save
+(autoload 'nuke-trailing-whitespace "whitespace" nil t)
+(add-hook 'write-file-hooks 'nuke-trailing-whitespace)
+
+;; Make delete to work
+(global-set-key (read-kbd-macro "<delete>") 'delete-char)
+
+;; Python mode
+(setq auto-mode-alist (cons '("\\.py$" . python-mode) auto-mode-alist))
+(setq interpreter-mode-alist (cons '("python" . python-mode)
+                                   interpreter-mode-alist))
+(autoload 'python-mode "python-mode" "Python editing mode." t)
+(custom-set-variables
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(inhibit-startup-screen t))
+(custom-set-faces
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ )
+
+(defalias 'indent-all
+  (read-kbd-macro "C-x h ESC C-\\"))
+(global-set-key [ f12 ] 'indent-all)
+
+
+[srudra@esling111 ~]$ cat /home/xxxxxxx/.vimrc 
+" Textual vim configuration
+" Copied from Jaku
+
+" set indentation to 4 spaces, but keep standard tab-stops
+set tabstop=8
+set shiftwidth=4
+set smarttab
+set showmatch
+
+set autoindent
+set cindent
+
+" Make command line two lines high
+set ch=2
+
+" line numbering and ruler
+set nonumber
+set noruler
+
+" set nohlsearch
+map <f7> :nohlsearch<CR>
+imap <f7> <C-O>:nohlsearch<CR>
+
+" make tabulator in visual mode to (un)indent code
+vmap <tab> >gv
+vmap <s-tab> <gv
+
+" remove extra white space
+:ab trail %s/\s\s*$//
+:ab lead  %s/^\s\s*//
+   
+" convert tabs to 8 spaces
+:ab untab %!expand -t8
+
+" convert 8 spaces to a tab
+:ab tab %!unexpand -t8
+
+" Trim code
+":ab trim %!indent -gnu -i4 -br -brs -di16 -bad -cli2 -cbi0 -c65 -cd65 -cp65 -l105
+
+" Fix backspace
+inoremap  
+[srudra@esling111 ~]$ cat /home/tuturune/.emacs
+[srudra@esling111 ~]$ vim /home/tuturune/.vimrc 
+[srudra@esling111 ~]$ vim /home/tuturune/.vimrc 
+[srudra@esling111 ~]$ cat /home/tuturune/.vimrc 
+" Textual vim configuration
+" Copied from Jaku
+
+" set indentation to 4 spaces, but keep standard tab-stops
+set tabstop=8
+set shiftwidth=4
+set smarttab
+set showmatch
+
+set autoindent
+set cindent
+
+" Make command line two lines high
+set ch=2
+
+" line numbering and ruler
+set nonumber
+set noruler
+
+" set nohlsearch
+map <f7> :nohlsearch<CR>
+imap <f7> <C-O>:nohlsearch<CR>
+
+" make tabulator in visual mode to (un)indent code
+vmap <tab> >gv
+vmap <s-tab> <gv
+
+" remove extra white space
+:ab trail %s/\s\s*$//
+:ab lead  %s/^\s\s*//
+   
+" convert tabs to 8 spaces
+:ab untab %!expand -t8
+
+" convert 8 spaces to a tab
+:ab tab %!unexpand -t8
+
+" Trim code
+":ab trim %!indent -gnu -i4 -br -brs -di16 -bad -cli2 -cbi0 -c65 -cd65 -cp65 -l105
+
+" Fix backspace
+inoremap  
+[srudra@esling111 ~]$
