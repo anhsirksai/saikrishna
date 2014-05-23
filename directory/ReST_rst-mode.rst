@@ -1,8 +1,8 @@
 :name: saikrishna
 :Topic: test rst-mode in emacs
-:`hyperlink`_:
+: `hyperlinka`_ :
 
-.. _`hyperlink`: https://facebook.com
+.. _`hyperlinka`: https://facebook.com
 
 .. contents:: **Table of contents**
 
@@ -21,7 +21,7 @@ What is the difference between org-mode and rst-mode interms of commands we use?
 Notes
 =====
 
-* How to add a hyperlink_ in another way:
+* How to add a `hyperlink`_ in another way:
 
 .. _`hyperlink`: http://www.google.com
 
