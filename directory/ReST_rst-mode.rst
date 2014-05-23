@@ -1,4 +1,5 @@
-Table:
+Table
+
 :name: saikrishna
 :Topic: test rst-mode in emacs
 : `hyperlinka`_ :
@@ -6,6 +7,9 @@ Table:
 .. _`hyperlinka`: https://facebook.com
 
 .. contents:: **Table of contents**
+
+.. sectnum::
+   :suffix: .
 
 About me
 ========
