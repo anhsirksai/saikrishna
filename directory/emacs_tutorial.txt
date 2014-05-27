@@ -144,6 +144,12 @@ shift+UP or shift+down - will chanfe the date and day of the date we inserted.
 
 #+end_src
 
+cut copy paste:
+first select the region:
+C-space, drag thru and select.
+C-w cut
+C-y paste(yank)
+M-w copy
 
 M-x org-Babel-tangle-file : This will tangle a program file.
 
