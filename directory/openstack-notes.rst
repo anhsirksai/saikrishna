@@ -16,6 +16,7 @@ devstack - clone - ./stack.sh
 
 working with the commands
 =========================
++ For openstack commands to work , when installed with devstack:
 + source openrc admin admin
 + source openrc demo demo
 
