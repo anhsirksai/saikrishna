@@ -71,3 +71,29 @@ Working with the python api's
        - nova.servers.list()
        - nova.image.list()
        - nova.flavor.list()
+
+Creating an instance with python bindings:
+==========================================
+
++  Using openstack python bindings to create a VM:
+   - Example2::
+     import os
+     import time
+     from novaclient import client as nvclient
+     from credentials import get_nova_creds
+     creds = get_nova_creds()
+     nova = nvclient.Client("1.1",**creds)
+     if not nova.keypairs.findall(name="mykey"):
+         with open(os.path.expanduser('~/.ssh/cloud.key.pub')) as fpubkey:
+             nova.keypairs.create(name="mykey", public_key=fpubkey.read())
+     image = nova.images.find(name="ubuntu_qcow")
+     flavor = nova.flavors.find(name="m1.small")
+     instance = nova.servers.create(name="test", image=image, flavor=flavor, key_name="mykey")
+     # Poll at 5 second intervals, until the status is no longer 'BUILD'
+     status = instance.status
+     while status == 'BUILD':
+         time.sleep(5)
+         # Retrieve the instance again so the status field updates
+         instance = nova.servers.get(instance.id)
+         status = instance.status
+     print "status: %s" % status
