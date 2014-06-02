@@ -38,7 +38,8 @@ Launching a VM
 
 Working with the python api's
 =============================
-+ In credentials.py file:: 
++ In credentials.py 
+  -  file:: 
      #!/usr/bin/env python
      import os
      def get_keystone_creds():
