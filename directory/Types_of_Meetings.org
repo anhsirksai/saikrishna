@@ -1,4 +1,4 @@
-*What is a goldfish bowl panel?
+*  What is a goldfish bowl panel?
 - Four to five chairs are arranged in the inner “fishbowl” circle.
 - Panelists initialize the discussion, sitting in the middle.
 - One middle chair is always left empty.
