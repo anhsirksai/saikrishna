@@ -154,3 +154,6 @@ M-w copy
 M-x org-Babel-tangle-file : This will tangle a program file.
 
 Inserting java script:  
+
+*  Inserting image
+   [[~/Desktop/Untitled001(5).jpg]]
