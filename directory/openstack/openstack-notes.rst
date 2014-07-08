@@ -97,3 +97,8 @@ Creating an instance with python bindings:
          instance = nova.servers.get(instance.id)
          status = instance.status
      print "status: %s" % status
+     
+Working with Re-join script:
+============================
+ctrl + a + " -> to select the process.
+ctrl + a + d -> to disconnect the screen.
