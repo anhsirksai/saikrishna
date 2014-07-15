@@ -102,6 +102,8 @@ delete a directory: d x
 unmark a directory : u
 g - reload.
 
+C-s = search in buffers.
+
 Move :
 put the cursor on file name. press R - Give the file name in the new directory.
 
