@@ -153,6 +153,16 @@ C-w cut
 C-y paste(yank)
 M-w copy
 
+copy paste with vim commands(when EVIL is installed with emacs)
+Cut and paste:
+
+    Position the cursor where you want to begin cutting.
+    Press v (or upper case V if you want to cut whole lines).
+    Move the cursor to the end of what you want to cut.
+    Press d to cut or y to copy.
+    Move to where you would like to paste.
+    Press P to paste before the cursor, or p to paste after. 
+
 M-x org-Babel-tangle-file : This will tangle a program file.
 
 Inserting java script:  
