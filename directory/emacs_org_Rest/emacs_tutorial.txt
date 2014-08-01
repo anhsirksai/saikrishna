@@ -45,7 +45,7 @@
     + File browsing commnds
     + Org mode
   - PYTHON :: python is a programming language
- * Date Manipulation
+ * Date Manipulation --> C-c C-d
    [2014-05-21 Wed]
 
  * Org-Babel: Literate Programming using Org mode.
@@ -152,6 +152,7 @@ C-space, drag thru and select.
 C-w cut
 C-y paste(yank)
 M-w copy
+C-/ undod
 
 copy paste with vim commands(when EVIL is installed with emacs)
 Cut and paste:
