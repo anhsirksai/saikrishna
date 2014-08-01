@@ -1,5 +1,6 @@
-This project is for the first task assigned as a practice to me during the virtual labs RAship.
+This is a practice repo.
 -problem_statement is added seperately in the problems folder.
 -solution_design: this directory contains the design to the problem statements.
 -src directory contains the code solutions for the problems.
-
+-docs contain documents.
+-expect other stuff too.
