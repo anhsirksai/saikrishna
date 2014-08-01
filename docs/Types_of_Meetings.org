@@ -1,0 +1,6 @@
+*  What is a goldfish bowl panel?
+- Four to five chairs are arranged in the inner “fishbowl” circle.
+- Panelists initialize the discussion, sitting in the middle.
+- One middle chair is always left empty.
+- The audience sits in other chairs, arranged in concentric circles outside the fishbowl.
+Any member of the audience can, at any time, occupy the empty chair and join the fishbowl. When this happens, an existing member of the fishbowl must voluntarily leave the fishbowl and free a chair. The discussion continues with participants frequently entering and leaving the fishbowl. 
