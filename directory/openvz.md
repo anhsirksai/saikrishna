@@ -3,16 +3,16 @@
 - [link to virtualization intro paper](http://download.openvz.org/doc/openvz-intro.pdf)
 
 - Three main virtualization approaches:
-```emulation```
-``` para-virtualization```
-``` operating-system level virtualization```
-```Multi-server  (cluster) virtualization.```
+..* emulation
+..* para-virtualization
+..* operating-system level virtualization
+..* Multi-server  (cluster) virtualization.
 
 - Main kernal components:
-```isolation and virtualization```
-```resource management```
-```check-pointing```
-```live migration```
+..* ```isolation and virtualization```
+..* ```resource management```
+..* ```check-pointing```
+..* ```live migration```
 
 - Emulations:
 ..* Imitation of behavior of a computer or other electronic system with the help of another type of computer/system. to run any non-modified operating system.
@@ -28,5 +28,3 @@
 ..* multiple isolated execution environments within a single operating system kernel.
 ..*  features dynamic resource management.
 ..* FreeBSD Jail , Solaris Zones/Containers ,Linux-VServer,OpenVZ and Virtuozzo.
-
-
