@@ -6,7 +6,7 @@
   * emulation
   * para-virtualization
   * operating-system level virtualization, and
-  * the one not discussed below Multi-server  (cluster) virtualization.
+  * HVM
 
 - Main kernal components:
   * isolation and virtualization
@@ -24,7 +24,12 @@
   * Here guest OS needs to be modified.
   * Examples: Xen , UML.
 
+- HVM:
+  * Stands for Hardware-assisted virtual machine. It provides complete hardware isolation. The hardware provides support to run independently for each OS.
+- PV on HVM
+  * Paravirtual guests traditionally performed better with storage and network operations than HVM guests because they could leverage special drivers for I/O that avoided the overhead of emulating network and disk hardware, whereas HVM guests had to translate these instructions to emulated hardware. Now these PV drivers are available for HVM guests, so operating systems that cannot be ported to run in a paravirtualized environment can still see performance advantages in storage and network I/O by using them. With these PV on HVM drivers, HVM guests can get the same, or better, performance than paravirtual guests.
+
 - Operating system-level virtualization :
   * multiple isolated execution environments within a single operating system kernel.
   *  **features dynamic resource management.**
-  * FreeBSD Jail , Solaris Zones/Containers ,Linux-VServer,OpenVZ and Virtuozzo.
+  * Examples: FreeBSD Jail , Solaris Zones/Containers ,Linux-VServer,OpenVZ and Virtuozzo.
