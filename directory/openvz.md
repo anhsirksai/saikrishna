@@ -26,5 +26,5 @@
 
 - Operating system-level virtualization :
   * multiple isolated execution environments within a single operating system kernel.
-  *  features dynamic resource management.
+  *  **features dynamic resource management.**
   * FreeBSD Jail , Solaris Zones/Containers ,Linux-VServer,OpenVZ and Virtuozzo.
