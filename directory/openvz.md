@@ -15,12 +15,12 @@
   * live migration
 
 - Emulations:
-  * Imitation of behavior of a computer or other electronic system with the help of another type of computer/system. *to run any non-modified operating system.*
+  * Imitation of behavior of a computer or other electronic system with the help of another type of computer/system. **to run any non-modified operating system.**
   * The main disadvantages of emulation are low performance and low density.
   * Examples: VMware products, QEmu , Bochs , Parallels
 
 - Paravirtualization :
-  * Is a technique to run multiple modified OSs on top of a thin layer called a *hypervisor, or virtual machine monitor.*
+  * Is a technique to run multiple modified OSs on top of a thin layer called a **hypervisor, or virtual machine monitor.**
   * Here guest OS needs to be modified.
   * Examples: Xen , UML.
 
