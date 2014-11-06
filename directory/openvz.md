@@ -1,4 +1,4 @@
-## open vz notes:
+## Virtualization notes:
 
 - [link to virtualization intro paper](http://download.openvz.org/doc/openvz-intro.pdf)
 
@@ -33,3 +33,8 @@
   * multiple isolated execution environments within a single operating system kernel.
   *  **features dynamic resource management.**
   * Examples: FreeBSD Jail , Solaris Zones/Containers ,Linux-VServer,OpenVZ and Virtuozzo.
+
+==Cloud notes==
+
+- service models:
+  * 
