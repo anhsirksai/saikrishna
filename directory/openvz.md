@@ -3,10 +3,10 @@
 - [link to virtualization intro paper](http://download.openvz.org/doc/openvz-intro.pdf)
 
 - Three main virtualization approaches:
-..* emulation
-..* para-virtualization
-..* operating-system level virtualization
-..* Multi-server  (cluster) virtualization.
+  * emulation
+  * para-virtualization
+  * operating-system level virtualization
+  * Multi-server  (cluster) virtualization.
 
 - Main kernal components:
 ..* ```isolation and virtualization```
