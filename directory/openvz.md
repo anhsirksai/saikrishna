@@ -34,7 +34,9 @@
   *  **features dynamic resource management.**
   * Examples: FreeBSD Jail , Solaris Zones/Containers ,Linux-VServer,OpenVZ and Virtuozzo.
 
-==Cloud notes==
+#Cloud notes
 
 - service models:
-  * 
+  * Infrastructure as a service (IaaS)
+  * Platform as a service (PaaS)
+  * Software as a service (SaaS)
